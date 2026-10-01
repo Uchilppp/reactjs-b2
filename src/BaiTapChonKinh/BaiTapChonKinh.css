@@ -1,0 +1,123 @@
+.glasses-app {
+  background-image: url('/glassesImage/background.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.glasses-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.header-title {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.model-container {
+  position: relative;
+  display: inline-block;
+  max-width: 280px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.model-container img.model-base {
+  width: 100%;
+  display: block;
+}
+
+/* Vị trí kính thử trên khuôn mặt người mẫu */
+.glasses-try-on {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 145px;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Khối thông tin chi tiết kính */
+.glasses-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(254, 150, 42, 0.65);
+  padding: 10px 14px;
+  text-align: left;
+  color: #fff;
+}
+
+.glasses-info .glasses-title {
+  color: #6a1b9a;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.glasses-info .glasses-price {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #c62828;
+  margin-bottom: 5px;
+}
+
+.glasses-info .glasses-desc {
+  font-size: 0.82rem;
+  margin-bottom: 0;
+  line-height: 1.35;
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Danh sách chọn kính */
+.glasses-list-card {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.glass-item-btn {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass-item-btn:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.25);
+  transform: translateY(-2px);
+}
+
+.glass-item-btn.active {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
+}
+
+.glass-item-btn img {
+  max-width: 100%;
+  max-height: 55px;
+  object-fit: contain;
+}
